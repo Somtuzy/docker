@@ -6,7 +6,8 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.json({
         current_directory: __dirname,
-        filename: __filename
+        filename: __filename,
+        dev: false
     })
 })
 
