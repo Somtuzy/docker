@@ -6,10 +6,10 @@ services:
       dockerfile: Dockerfile
       args:
         NODE_ENV: dev
-    container_name: dev_c
+    container_name: devjs_c
     ports:
       - '8000:8080'
-    image: dev:v1
+    image: dev:js
     environment:
       - NODE_ENV=dev
     volumes:
@@ -21,9 +21,9 @@ services:
       dockerfile: Dockerfile
       args:
         NODE_ENV: live
-    container_name: live_c
+    container_name: livejs_c
     ports:
       - '9000:8080'
-    image: live:v1
+    image: live:js
     environment:
       - NODE_ENV=live
