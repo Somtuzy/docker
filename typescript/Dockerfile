@@ -19,7 +19,7 @@ RUN if [ "$NODE_ENV" = "dev" ]; then npm install -g nodemon; fi
 RUN if [ "$NODE_ENV" = "live" ]; then npm run build; fi
 
 # Define the network ports that this container will listen on at runtime. This will be the port your app is running on.
-EXPOSE 8080
+EXPOSE 9000
 
 # Start the container based on the specific environment
 CMD if [ "$NODE_ENV" = "dev" ]; then npm run dev; else npm start; fi
